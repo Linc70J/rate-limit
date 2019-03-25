@@ -1,0 +1,25 @@
+{
+  "name": "rate-limit",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "mongo-up": "cd docker; docker-compose up -d",
+    "mongo-down": "cd docker; docker-compose down",
+    "start": "node ./bin/www",
+    "test": "mocha ./tests --recursive"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mongodb": "^3.2.2",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2"
+  }
+}
